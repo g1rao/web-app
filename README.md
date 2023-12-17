@@ -2,7 +2,7 @@
 * **⚠️ Please read these instructions carefully and _entirely_ first.**
 * Clone this repo on your machine.
 * Use your IDE of choice to complete the assignment.
-* When you are done with the solution and have pushed it to the repo, [you can submit the assignment here]({{submission_link}}).
+* When you are done with the solution and have pushed it to the repo, [you can submit the assignment here](https://app.snapcode.review/submission_links/eeee2845-ce2f-427f-b533-cf7353d36447).
 * Once you've indicated that you've completed the exercise, your access to the repository will be revoked. Make sure that you have 
   finished the solution and pushed all the relevant code to the repo.
   Welcome to the start of our recruitment process for Operability Engineers. It was great to speak to you regarding an opportunity to join the Equal Experts network!
