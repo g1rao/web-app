@@ -6,8 +6,8 @@ This project provides a simple HTTP API that interacts with the GitHub API to re
 
 ### Prerequisites
 
-- Python 3.x installed
-- Docker installed
+- Python3
+- Docker
 
 ### Installation
 

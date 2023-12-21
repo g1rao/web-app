@@ -52,6 +52,14 @@
         </tr>
         {% endfor %}
     </table>
+    <div class="pagination">
+        {% if page > 1 %}
+            <a href="/{{ git_user }}?page={{ page - 1 }}">Previous</a>
+        {% endif %}
+        {% if gists | length >= 10 %}
+            <a href="/{{ git_user }}?page={{ page + 1 }}">Next</a>
+        {% endif %}
+    </div>
     {%  else %}
     <p>No gists found...</p>
     {% endif %}
