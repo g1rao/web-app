@@ -23,7 +23,8 @@ def get_user_gists(username=None):
             start_index = (page - 1) * ITEMS_PER_PAGE
             end_index = start_index + ITEMS_PER_PAGE
             current_gists = gists[start_index:end_index]
-            return render_template('gists_table.html', gists=current_gists, git_user=git_user, page=page)
+            sno = (page - 1) * ITEMS_PER_PAGE + 1
+            return render_template('gists_table.html', gists=current_gists, git_user=git_user, page=page, sno=sno)
         else:
             return jsonify({'error': 'Failed to fetch Gists', 'message': response.json()['message']}), response.status_code
     except requests.RequestException as e:

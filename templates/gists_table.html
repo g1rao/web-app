@@ -21,6 +21,7 @@
     {% if gists %}
     <table border="1">
         <tr>
+            <th>S.No.</th>
             <th>ID</th>
             <th>URL</th>
             <th>Files</th>
@@ -30,6 +31,7 @@
         </tr>
         {% for gist in gists %}
         <tr>
+            <td>{{ sno+loop.index - 1 }}</td>
             <td>{{ gist.id }}</td>
             <td><a href="{{ gist.html_url }}">
                 {% if gist.description %}
