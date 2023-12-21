@@ -14,8 +14,8 @@ This project provides a simple HTTP API that interacts with the GitHub API to re
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/g1rao/github-gists-api.git
-    cd github-gists-api
+    git clone https://github.com/EqualExperts-Assignments/equal-experts-intolerant-liberal-shock-1a1f281a9c27.git
+    cd equal-experts-intolerant-liberal-shock-*
     ```
 
 2. Install required Python libraries:
