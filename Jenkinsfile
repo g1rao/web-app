@@ -7,8 +7,8 @@ pipeline {
         stage('scm') {
             steps {
                 sh(returnStdout: true, script: ''' 
-                git clone https://github.com/EqualExperts-Assignments/equal-experts-intolerant-liberal-shock-1a1f281a9c27.git
-                cd EqualExperts-Assignments/equal-experts-intolerant-liberal-shock-1a1f281a9c27
+                git clone https://github.com/g1rao/web-app.git
+                cd web-app/
                 git checkout solution''')
             }
         }
