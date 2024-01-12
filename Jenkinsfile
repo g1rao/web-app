@@ -7,6 +7,7 @@ pipeline {
         stage('scm') {
             steps {
                 sh(returnStdout: true, script: ''' 
+                rm -rf web-app/
                 git clone https://github.com/g1rao/web-app.git
                 cd web-app/
                 git checkout solution''')
@@ -14,7 +15,11 @@ pipeline {
         }
         stage('unit-tests') {
             steps {
-                sh(returnStdout: true, script: ''' pytest . ''')
+                sh(returnStdout: true, script: ''' 
+                python3 -m venv venv/
+                . venv/bin/activate
+                pip3 install -r web-app/requirements.txt
+                pytest . ''')
             }
         }
         stage('build-image') {
